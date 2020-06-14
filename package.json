@@ -1,0 +1,45 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "Node-p5-playground",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "start": "rimraf ./public && webpack && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "babel-loader": "^8.1.0",
+    "babel-preset": "^1.1.6",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "minimist": "^1.2.5",
+    "rimraf": "^2.6.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "engines": {
+    "node": "12.0.0"
+  },
+  "repository": {
+    "url": "https://glitch.com/#!/project/welcome-project"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
